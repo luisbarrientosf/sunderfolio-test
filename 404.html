@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=./" />
+    <meta charset="UTF-8" />
+    <title>404 Not Found</title>
+    <script>
+      // SPA redirect for GitHub Pages
+      // Redirects to index.html and preserves the path for React Router
+      (function() {
+        var l = window.location;
+        var base = '/sunderfolio-test';
+        if (l.pathname.startsWith(base + '/')) {
+          var newUrl = base + '/index.html?redirect=' + encodeURIComponent(l.pathname + l.search + l.hash);
+          window.location.replace(newUrl);
+        } else {
+          window.location.replace(base + '/index.html');
+        }
+      })();
+    </script>
   </head>
-  <body>404</body>
+  <body>404: Not Found</body>
 </html>
