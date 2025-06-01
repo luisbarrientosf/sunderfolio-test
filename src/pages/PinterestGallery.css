@@ -1,0 +1,31 @@
+.pinterest-gallery-root {
+  min-height: 100vh;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+.my-masonry-grid {
+  display: flex;
+  margin-left: -16px;
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 16px;
+  background-clip: padding-box;
+}
+.pinterest-image-wrapper {
+  margin-bottom: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  background: #eee;
+}
+.pinterest-image {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  transition: transform 0.2s;
+}
+.pinterest-image:hover {
+  transform: scale(1.04);
+}

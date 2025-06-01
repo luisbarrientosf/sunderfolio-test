@@ -1,0 +1,10 @@
+.video-example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.video-example h2 {
+  margin-bottom: 1rem;
+}
