@@ -3,7 +3,7 @@ import CarouselPage from './pages/CarouselPage';
 import PinterestGallery from './pages/PinterestGallery';
 
 const AppRouter = () => (
-  <Router>
+  <Router basename={import.meta.env.BASE_URL}>
     <Routes>
       <Route path="/" element={<CarouselPage />} />
       <Route path="/pinterest-gallery" element={<PinterestGallery />} />
